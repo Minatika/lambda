@@ -1,0 +1,50 @@
+.about {
+  min-height: 710px;
+  background-image: url("../img/bg-about.jpg");
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+}
+
+.about__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1250px;
+  margin: 0 auto;
+  padding-top: 55px;
+  text-align: center;
+}
+
+.about__desc {
+  width: 430px;
+  margin-right: 23px;
+  padding: 45px 0 0 110px;
+}
+
+.about__title {
+  position: relative;
+  margin: 0 0 62px;
+  font-size: 36px;
+  line-height: 44px;
+  font-family: "Yeseva One", "Times New Roman", cursive;
+  color: @color-third;
+  text-align: center;
+
+  &::after {
+    content: url("../img/Divider.png");
+    position: absolute;
+    bottom: -27px;
+    left: 50%;
+    width: 247px;
+    height: 24px;
+    margin-left: -126px;
+  }
+}
+
+.about__text {
+  margin: 0 0 49px;
+  letter-spacing: 0.0005em;
+}
+
+.about__cook-img {
+  margin-left: 67px;
+}
