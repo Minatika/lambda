@@ -1,0 +1,35 @@
+.page-header {
+  box-sizing: border-box;
+  min-height: 640px;
+  padding-top: 105px;
+}
+
+.page-header__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 1250px;
+  margin: 0 auto;
+}
+
+
+.page-header__desc {
+  position: relative;
+  margin: 0 0 96px;
+  font-size: 90px;
+  line-height: 120px;
+  color: @color-secondary;
+  font-family: "Yeseva One", "Times New Roman", cursive;
+  text-align: center;
+  text-shadow: 0 1px 2px @color-shadow;
+
+  &::after {
+    content: url("../../img/decoration-header.png");
+    position: absolute;
+    bottom: -18px;
+    left: 50%;
+    margin-left: -116px;
+    width: 232px;
+    height: 43px;
+  }
+}

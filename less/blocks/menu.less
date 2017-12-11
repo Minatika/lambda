@@ -1,0 +1,95 @@
+.menu {
+  min-height: 994px;
+  background-image: url("../img/bg-menu.jpg");
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+}
+
+.menu__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1250px;
+  margin: 0 auto;
+  padding-top: 73px;
+}
+
+.menu__column {
+  width: 570px;
+
+  &:first-of-type {
+    margin: 0 30px 0 40px;
+  }
+}
+
+.menu__section {
+  padding: 27px 62px 0 60px;
+}
+
+.menu__title {
+  position: relative;
+  margin: 0 0 57px;
+  font-size: 36px;
+  line-height: 44px;
+  font-family: "Yeseva One", "Times New Roman", cursive;
+  color: @color-third;
+  text-align: center;
+
+  &::after {
+    content: url("../img/Divider.png");
+    position: absolute;
+    bottom: -27px;
+    left: 50%;
+    width: 247px;
+    height: 24px;
+    margin-left: -126px;
+  }
+}
+
+.menu__dish {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 18px;
+  padding: 8px;
+
+  &--special {
+    position: relative;
+    box-shadow: 0 0 0 1px @color-line;
+
+    &::before {
+      content: "Special";
+      position: absolute;
+      top: -22px;
+      right: -1px;
+      width: 69px;
+      height: 21px;
+      color: @color-secondary;
+      text-align: center;
+      background-color: @color-line;
+    }
+  }
+
+  &:last-of-type {
+    margin-bottom: 25px;
+  }
+}
+
+.menu__dish-name {
+  margin: 0 0 7px;
+  font-size: 21px;
+  font-family: "Yeseva One", "Times New Roman", cursive;
+  color: @color-menu;
+}
+
+.menu__dish-price {
+  margin: 0 0 0 auto;
+  font-size: 21px;
+  font-family: "Yeseva One", "Times New Roman", cursive;
+  color: @color-menu;
+}
+
+.menu__dish-desc {
+  width: 100%;
+  margin: 0;
+  padding-top: 8px;
+  border-top: 1px solid @color-line;
+}

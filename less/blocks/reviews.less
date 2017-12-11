@@ -1,0 +1,75 @@
+.reviews {
+  min-height: 758px;
+  background-image: url("../img/bg-review.jpg");
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+}
+
+.reviews__wrapper {
+  width: 1250px;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+
+.reviews__item {
+  width: 630px;
+  min-height: 482px;
+  margin: 0 auto;
+  padding: 75px 70px 0;
+  background-color: @color-shadow--dark;
+}
+
+.reviews__item-title {
+  position: relative;
+  margin: 0 0 57px;
+  font-size: 36px;
+  line-height: 44px;
+  font-family: "Yeseva One", "Times New Roman", cursive;
+  color: @color-secondary;
+  text-align: center;
+
+  &::after {
+    content: url("../img/Divider-white.png");
+    position: absolute;
+    bottom: -29px;
+    left: 50%;
+    width: 247px;
+    height: 24px;
+    margin-left: -124px;
+  }
+}
+
+.reviews__text {
+  position: relative;
+  margin: 0 0 20px;
+  font-size: 25px;
+  line-height: 45px;
+  color: @color-secondary;
+  font-family: "Gentium Book Basic", "Times New Roman", serif;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 0.7px;
+
+  &::before {
+    content: "\201c";
+    position: absolute;
+    top: -18px;
+    left: -42px;
+    font-size: 75px;
+    line-height: 75px;
+    color: @color-gray;
+    font-family: "Times New Roman", serif;
+    opacity: 0.47;
+  }
+}
+
+.reviews__author {
+  display: block;
+  margin: 0;
+  font-size: 18px;
+  line-height: 45px;
+  color: @color-secondary;
+  font-family: "Lato", "Times New Roman", serif;
+  font-style: normal;
+  text-align: center;
+}
