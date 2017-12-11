@@ -22,12 +22,12 @@
 }
 
 .menu__section {
-  padding: 27px 70px 0 68px;
+  padding: 27px 62px 0 60px;
 }
 
 .menu__title {
   position: relative;
-  margin: 0 0 65px;
+  margin: 0 0 57px;
   font-size: 36px;
   line-height: 44px;
   font-family: "Yeseva One", "Times New Roman", cursive;
@@ -48,24 +48,28 @@
 .menu__dish {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 34px;
+  margin-bottom: 18px;
+  padding: 8px;
 
   &--special {
     position: relative;
-    outline: 1px solid @color-line;
-    outline-offset: 8px;
+    box-shadow: 0 0 0 1px @color-line;
 
     &::before {
       content: "Special";
       position: absolute;
-      top: -29px;
-      right: -9px;
+      top: -22px;
+      right: -1px;
       width: 69px;
       height: 21px;
       color: @color-secondary;
       text-align: center;
       background-color: @color-line;
     }
+  }
+
+  &:last-of-type {
+    margin-bottom: 25px;
   }
 }
 
